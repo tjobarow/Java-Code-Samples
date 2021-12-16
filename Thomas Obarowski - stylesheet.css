@@ -1,0 +1,413 @@
+/* 
+ * This file is an example of my knowledge of CSS. This file contains all CSS for my "Network Based Application Development" course semester project.
+ *
+ * @author Thomas Obarowski
+ *
+ *
+ */
+
+/* --------------------------------------------------------------------- */
+/* This section is general css for higher-level elements or all elements */
+
+* {
+    margin:0;
+    padding:0;
+}
+
+*,
+*:before, *:after {
+    box-sizing: inherit;
+}
+
+html {
+    height: 100%;
+    background: #1d1e22;
+}
+
+/* --------------------------------------------------------------------- */
+/* This section is CSS for the header */
+.header {
+    background-color: #393f4d;
+    color: #feda6a;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+    margin: 5px 5px 5px 5px;
+}
+
+/* --------------------------------------------------------------------- */
+/*This section is CSS for the top navigation bar */
+
+/* Setting background color, padding, etc */
+.top-nav {
+    background-color: #393f4d;
+    overflow: hidden;
+    margin: 0px 5px 5px 5px;
+    text-align: center;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Styling the links (anchor tags) inside the navigation bar */
+.top-nav a {
+    float: none;
+    color: #d4d4dc;
+    text-align: center;
+    padding: 14px 16px 14px 16px;
+    margin: 5px 5px 5px 5px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on when the mouse hovers over it */
+.top-nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active link (link with active class)*/
+.top-nav a.active {
+    background-color: #b2b2b2;
+    color: white;
+}
+
+.top-nav p {
+    display: inline;
+    float: left;
+}
+
+/* --------------------------------------------------------------------- */
+/* This section is CSS for the side navigation bar */
+
+/** We are styling the side-nav bar to float to the left side of the page, and padding
+padding, height, etc.
+*/
+.side-nav {
+    float: left;
+    text-align: center;
+    list-style-type: square;
+    list-style-position: inside;
+    height: 760px;
+    width: 10%;
+    margin: 0px 10px 30px 5px;
+    background-color: #393f4d;
+    padding: 10px 10px 10px 10px;
+}
+
+/* Style the anchor tags in side nav bar so they align vertically */
+.side-nav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d4d4dc;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.side-nav a:hover {
+    color: #f1f1f1;
+}
+
+/* Adding a color change to the active link */
+.side-nav a.active {
+    background-color: #feda6a;
+    color: #393f4d;
+}
+
+/* --------------------------------------------------------------------- */
+/* This section styles the body */
+
+/* Setting the position to relative and setting the font-family, also
+making the background color !important so it overwrites bootstrap.css default
+background color */
+body {
+    position: relative;
+    margin: 0;
+    min-height: 100%;
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    background: #1d1e22 !important;
+}
+
+body h3 {
+    color: #d4d4dc;
+    margin: 20px 0px 20px 0px;
+    font-size: 3em;
+}
+
+body p {
+    color: #d4d4dc;
+    font-size: 1.5em;
+    margin: 0px 10px 0px 0px;
+}
+
+.categories {
+    margin: 5px 5px 0px 0px;
+}
+
+div.categories h2 {
+    position: relative;
+    left: 0px;
+    font-size: 1.5em;
+    color: #feda6a;
+}
+
+div.categories ul li, div.categories ul li a {
+    font-size: 1.2em;
+    color: #d4d4dc;
+    text-decoration: underline;
+    list-style-type: none;
+}
+
+.item {
+    color: #d4d4dc;
+    width: 1000px;
+    left: 0px;
+    position: relative;
+    display: inline;
+}
+
+.item h2 {
+    position: relative;
+    left: 0px;
+    margin: 0px 0px 25px 0px;
+    color: #feda6a;
+}
+
+.item img {
+    width: 30%;
+    height: 30%;
+}
+
+.item-content {
+    position: absolute !important;
+    display: inline-block;
+    left:580px;
+    /*top: 80px;*/
+}
+
+item-content * {
+    margin-left: 10px;
+    
+}
+
+.item-content p {
+    position: absolute;
+    display: inline;
+    width: 750px;
+}
+
+#returnButton {
+    position: absolute;
+    margin-top: 10px;
+}
+
+.rat-cat {
+    width: 750px;
+}
+
+.style-h4 {
+    color: #feda6a;
+}
+
+.listing h4 {
+    display: inline;
+}
+
+.item div {
+    margin: 0px 0px 10px 0px;
+}
+
+.inline-form {
+    display: inline;
+}
+
+.myItems {
+    position: relative;
+    width: 75%;
+    left: 200px;
+}
+
+.myItems h2 {
+    color: #feda6a;
+}
+
+.myItems table {
+    width: 50%
+}
+
+.listings {
+    position: relative;
+    color: #d4d4dc;
+}
+
+.listings table, .listings h2, .listings h5 {
+    position: relative;
+    right: 200px;
+}
+
+.listing h5 {
+    color: #d4d4dc;
+}
+
+.saved {
+    position: relative;
+    margin: 30px 0px 0px 0px;
+    color: #d4d4dc;
+}
+
+.saved table, .saved h2 {
+    position: relative;
+    right: 200px;
+}
+
+#contact {
+    position: relative;
+    color: #d4d4dc;
+    display: inline-block;
+    margin: 0px 0px 0px 10px;
+}
+
+
+#contact form h4 {
+    margin-top: 10px;
+}
+
+/* --------------------------------------------------------------------- */
+/* This section styles the signin page */
+
+#userID, #password {
+    width: 50%;
+}
+
+.signInHeading {
+    color: #d4d4dc;
+}
+
+#wrongCred {
+    color: red;
+}
+
+/* --------------------------------------------------------------------- */
+/* This section is CSS for the profile page */
+
+#profileBody h1, #profileBody h2 {
+    color: #feda6a;
+}
+
+#profileBody h4 {
+    color: #d4d4dc;
+}
+
+#profileBody p, #profileBody h1, #profileBody h2, #profileBody h4 {
+    display: inline !important;
+}
+
+.savedList {
+    width: 50% !important;
+}
+
+table img {
+    width: 100%;
+    height: 100%%;
+}
+
+#profileBody hr {
+    border-color: #d4d4dc !important;
+    width: 50%;
+}
+
+#imageCol {
+    width: 100px;
+    height: 100px;
+    overflow: hidden !important;
+}
+
+/*#listingImage {
+    width: 500px !important;
+}
+*/
+/* --------------------------------------------------------------------- */
+/* This section styles the register page*/
+
+.register-form {
+    width: 30% !important;
+}
+
+.register-container form div label {
+    color: #f1f1f1
+}
+
+.register-container {
+    overflow: scroll;
+    height: 745px;
+}
+.register-group * {
+    //display: inline !important;
+}
+
+/* --------------------------------------------------------------------- */
+/* This section styles the enter item page*/
+
+.footerFix footer {
+    position: relative !important;
+}
+
+.hidden {
+    display: none;
+}
+
+/* --------------------------------------------------------------------- */
+/* This section styles the footer */
+
+/* This CSS was heavily influenced by the always on bottom footer piazza post made by an instructor */
+footer {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 1rem;
+    background-color: #393f4d;
+    color: #d4d4dc;
+    text-align: center;
+    margin: 5px 5px 5px 5px;
+}
+
+// New Section for Responsive Design
+/*  SECTIONS  */
+.section {
+    clear: both;
+    padding: 0px;
+    margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+    display: block;
+    float:left;
+    margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+/*  GROUPING  */
+.group:before,
+.group:after { content:""; display:table; }
+.group:after { clear:both;}
+.group { zoom:1; /* For IE 6/7 */ }
+
+/*  GRID OF TWO  */
+.span_2_of_2 {
+    width: 100%;
+}
+.span_1_of_2 {
+    width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+    .col { 
+        margin: 1% 0 1% 0%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .span_2_of_2, .span_1_of_2 { width: 100%; }
+}
